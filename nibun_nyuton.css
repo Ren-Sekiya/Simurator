@@ -19,22 +19,23 @@ body{
 }
 
 .area{
-    margin-right: 10;
+    margin-right: 10px;
     position: relative;
 }
 
 #area1{
     background-color: #0fffff;
-    width: 400;
-    height: 400;
+    width: 400px;
+    height: 400px;
 }
 
 #area2{
     background-color: aquamarine;
-    width: 400;
-    height: 400;
+    width: 400px;
+    height: 400px;
 }
 
 #contents{
     display: flex;
+    margin: 10px;
 }
