@@ -48,12 +48,12 @@ class vgraph{
 }
 
     
-    document.querySelector("#b01").addEventListener('click', function(event) {
+    document.querySelector("#b01").addEventListener('click', () =>{
         var vg = new vgraph();
      vg.graph();
     });
 
-    document.querySelector("#b02").addEventListener('click', function(event) {
+    document.querySelector("#b02").addEventListener('click', () => {
         var vg = new vgraph();
         vg.graph2(x);
     });
