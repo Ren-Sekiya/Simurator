@@ -20,6 +20,14 @@ body{
 
 #area1{
     background-color: #0fffff;
+    width: 480;
+    height: 480;
+}
+
+#area2{
+    background-color: aquamarine;
+    width: 480;
+    height: 480;
 }
 
 #contents{
