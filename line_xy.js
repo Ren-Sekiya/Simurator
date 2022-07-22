@@ -14,3 +14,13 @@ context.beginPath();
 context.moveTo(0, 200);
 context.lineTo(400, 200);
 context.stroke();
+
+context2.beginPath();
+context2.moveTo(200, 0);
+context2.lineTo(200, 400);
+context2.stroke();
+
+context2.beginPath();
+context2.moveTo(0, 200);
+context2.lineTo(400, 200);
+context2.stroke();
