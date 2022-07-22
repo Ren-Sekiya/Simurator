@@ -2,7 +2,7 @@ var element = document.querySelector("#graph1");
 var context = element.getContext('2d');
 
 var element2 = document.querySelector("#graph3");
-var context2 = element.getContext('2d');
+var context2 = element2.getContext('2d');
 
 
 context.beginPath();
