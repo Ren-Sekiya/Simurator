@@ -18,6 +18,10 @@ body{
     top: 0;
 }
 
+.area{
+    margin-right: 10px;
+    flex: 10px;
+}
 
 #area1{
     background-color: #0fffff;
@@ -33,5 +37,4 @@ body{
 
 #contents{
     display: flex;
-    margin-right: 10px;
 }
