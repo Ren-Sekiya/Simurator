@@ -2,6 +2,10 @@ body{
     background-color: #fffffc;
 }
 
+#main{
+    width: 300;
+}
+
 #panel{
  width: 300px;   
 }
