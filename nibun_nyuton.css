@@ -1,0 +1,19 @@
+body{
+    background-color: #fffffc;
+}
+
+#panel1{
+ width: 180px;   
+}
+
+.mycanvas{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
+#contents{
+    display: flex;
+}
