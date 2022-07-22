@@ -7,39 +7,46 @@
 </head>
 <body>
     <div id="contents">
-     <div id="panel">
-      <div>
-        <button type="button" id="start" class="normal">start</button>
-        <button type="button" id="clear" class="normal">clear</button>
+      <div id="panel">
+        <div>
+          <button type="button" id="start" class="normal">start</button>
+          <button type="button" id="clear" class="normal">clear</button>
+        </div>
+        <div>
+          <p>グラフ</p>
+          <button type="button" id="b01" class="graph">
+             <img src="graph1.png" width="100" height="30">
+         </button>
+         <button type="button" id="b02" class="graph">
+             <img src="graph2.png" width="100" height="30">
+         </button>
+        </div>
+        <div>
+          <p>初期値</p>
+          a:<input type="range" id="inputControlBar1" min="0" max="10" step="1" value="0">
+          :<span id="viewbar1" class="view">0</span>
+          <br>
+          b:<input type="range" id="inputControlBar2" min="0" max="10" step="1" value="0">
+          :<span id="viewbar2" class="view">0</span>
+        </div>
+        <p id="theory">理論値:</p>
+        <p id="nibun">二分法の計算値:</p>
+        <p id="nyuton">ニュートン法の計算値:</p>
       </div>
-      <div>
-        <p>グラフ</p>
-        <button type="button" id="b01" class="graph">
-            <img src="graph1.png" width="100" height="30">
-        </button>
-        <button type="button" id="b02" class="graph">
-            <img src="graph2.png" width="100" height="30">
-        </button>
-      </div>
-      <div>
-        <p>初期値</p>
-        a:<input type="range" id="inputControlBar1" min="0" max="10" step="1" value="0">
-        :<span id="viewbar1" class="view">0</span>
-        <br>
-        b:<input type="range" id="inputControlBar2" min="0" max="10" step="1" value="0">
-        :<span id="viewbar2" class="view">0</span>
-      </div>
-      <p id="theory">理論値:</p>
-      <p id="nibun">二分法の計算値:</p>
-      <p id="nyuton">ニュートン法の計算値:</p>
-     </div>
-     <div id="main">
+       <div id="main">
         <div id="area1" class="area">
             <p> 二分法の様子</p>
             <canvas class="mycanvas" id="graph1" width="460" height="460"></canvas>
             <canvas class="mycanvas" id="graph2" width="460" height="460"></canvas>
         </div>
-     </div>
-    
+       </div>
+       <div id="main2">
+        <div id="area2" class="area">
+            <p> ニュートン法の様子</p>
+            <canvas class="mycanvas" id="graph3" width="460" height="460"></canvas>
+            <canvas class="mycanvas" id="graph4" width="460" height="460"></canvas>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
