@@ -18,11 +18,14 @@ body{
     top: 0;
 }
 
+.area{
+    margin-right: 10;
+}
+
 #area1{
     background-color: #0fffff;
     width: 480;
     height: 480;
-    margin-right: 10;
 }
 
 #area2{
