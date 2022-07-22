@@ -1,6 +1,10 @@
 var element = document.querySelector("#graph1");
 var context = element.getContext('2d');
 
+var element2 = document.querySelector("#graph3");
+var context2 = element.getContext('2d');
+
+
 context.beginPath();
 context.moveTo(200, 0);
 context.lineTo(200, 400);
