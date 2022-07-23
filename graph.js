@@ -55,6 +55,11 @@ class vgraph{
          y1 = y2;
         }
     }
+
+    clear(){
+        this.context.fillRect(0, 0, element.width, element.height);
+        this.context2.fillRect(0, 0, element2.width, element2.height);
+    }
 }
 
     
