@@ -5,6 +5,10 @@ var element2 = document.querySelector("#graph3");
 var context2 = element2.getContext('2d');
 
 
+var x1 = element.width;
+var x2 = element2.width;
+var y1 = element.height;
+var y2 = element2.height;
 context.beginPath();
 context.moveTo(200, 0);
 context.lineTo(200, 400);
