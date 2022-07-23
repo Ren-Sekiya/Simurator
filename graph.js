@@ -7,15 +7,18 @@ class vgraph{
     context2 = element2.getContext('2d');
 
     graph() {
-        var x1 = element.width;
-        var x2 = element2.width;
-        var y1 = element.height;
-        var y2 = element2.height;
-        for(var x = 0 ;x < 10; x++){
-         var y2 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + 200;
+        width = element.width;
+        height = element.height;
+        x1 = x + width/2;
+        y1 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + width/2;
+       for(var x = 1 ;x < width/2; x++){
          context.beginPath();
          context.moveTo(x1, y1);
-         context.lineTo(x2 + 1, y2);
+
+         x2 = x + width/2;
+         y2 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + height/2;
+
+         context.lineTo(x2, y2);
          context.stroke();
          /*context2.beginPath();
          context2.moveTo(x1, y1);
@@ -31,19 +34,19 @@ class vgraph{
         var x2 = element2.width;
         var y1 = element.height;
         var y2 = element2.height;
-        for(var x = 0 ;x < 10; x++){
+       /* for(var x = 0 ;x < 10; x++){
          var y2 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + 200;
          context.beginPath();
          context.moveTo(x1, y1);
          context.lineTo(x2 + 1, y2);
          context.stroke();
-         /*context2.beginPath();
+         context2.beginPath();
          context2.moveTo(x1, y1);
          context2.lineTo(x2 + 1, y2);
          context2.stroke();*/
          x1 = x2;
          y1 = y2;
-        }
+        /*}*/
     }
 }
 
