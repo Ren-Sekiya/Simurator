@@ -11,7 +11,7 @@ class vgraph{
         var x2 = element2.width;
         var y1 = element.height;
         var y2 = element2.height;
-        for(var x = 0.0 ;x < 10.0; x++){
+        for(var x = 0 ;x < 10; x++){
          var y2 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + 200;
          context.beginPath();
          context.moveTo(x1, y1);
@@ -31,7 +31,7 @@ class vgraph{
         var x2 = element2.width;
         var y1 = element.height;
         var y2 = element2.height;
-        for(var x = 0.0 ;x < 10.0; x++){
+        for(var x = 0 ;x < 10; x++){
          var y2 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + 200;
          context.beginPath();
          context.moveTo(x1, y1);
