@@ -22,9 +22,9 @@ class vgraph{
          x2 = x1 + (width/width) * 20;
          y2 = ((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3);
          if(y2 < 0){
-            y2 = -2 * y2 + height/2;
+            y2 = 2 * y2 + height/2;
          }else{
-            y2 = y2 * 2 + height/2;
+            y2 = y2 * -2 + height/2;
          }
 
          context.lineTo(x2, y2);
