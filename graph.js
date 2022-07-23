@@ -19,7 +19,7 @@ class vgraph{
          context2.beginPath();
          context2.moveTo(x1, y1);
 
-         x2 = (width/width) * 20;
+         x2 = x1 + (width/width) * 20;
          y2 = -2*((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + height/2 ;
 
          context.lineTo(x2, y2);
