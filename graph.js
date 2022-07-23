@@ -1,7 +1,7 @@
 class vgraph{
     constructor(elem, elem2){
     this.element = elem;
-    this.context = elem.getContext('2d');
+    this.context = this.element.getContext('2d');
 
     this.element2 = elem2;
     this.context2 = elem2.getContext('2d');
