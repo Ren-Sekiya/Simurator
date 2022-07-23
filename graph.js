@@ -1,14 +1,15 @@
 class vgraph{
-    constructor(){};
-    element = document.querySelector("#graph2");
-    context = element.getContext('2d');
+    constructor(elem, elem2){
+    this.element = elem;
+    this.context = elem.getContext('2d');
 
-    element2 = document.querySelector("#graph4");
-    context2 = element2.getContext('2d');
+    this.element2 = elem2;
+    this.context2 = elem2.getContent('2d');
+    };
 
     graph() {
-        var width = element.width;
-        var height = element.height;
+        var width = this.element.width;
+        var height = this.element.height;
         var x1 = 0;
         var y1 = height;
         var x2 = 0;
@@ -57,8 +58,8 @@ class vgraph{
     }
 
     clear(){
-        this.context.clearRect(0, 0, element.width, element.height);
-        this.context2.clearRect(0, 0, element2.width, element2.height);
+        this.context.clearRect(0, 0, this.element.width, this.element.height);
+        this.context2.clearRect(0, 0, this.element2.width, ths.element2.height);
         this.context.beginPath();
     }
 }

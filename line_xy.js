@@ -1,8 +1,10 @@
 var element = document.querySelector("#graph1");
 var context = element.getContext('2d');
+var elem = document.querySelector("#graph2");
 
 var element2 = document.querySelector("#graph3");
 var context2 = element2.getContext('2d');
+var elem2 = document.querySelector("#graph4");
 
 
 var x1 = element.width;
@@ -32,12 +34,12 @@ context2.stroke();
 
 document.querySelector("#b01").addEventListener('click', () =>{
     var vg = new vgraph();
-    vg.graph();
+    vg.graph(elem, elem2);
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
     var vg = new vgraph();
-    vg.graph2();
+    vg.graph2(elem, elem2);
 });
 
 document.querySelector("#clear").addEventListener('click', () =>{
