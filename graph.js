@@ -10,6 +10,7 @@ class vgraph{
     graph() {
         var width = this.element.width;
         var height = this.element.height;
+        this.context.clearRect(0, 0, this.element.width, this.element.height);
         var x1 = 0;
         var y1 = height;
         var x2 = 0;
