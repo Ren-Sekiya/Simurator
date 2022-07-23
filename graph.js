@@ -13,14 +13,14 @@ class vgraph{
         var y1 = height;
         var x2 = 0;
         var y2 = 0;
-       for(var x = 1 ;x < width; x++){
+       for(var x = -10 ;x < 10; x++){
          context.beginPath();
          context.moveTo(x1, y1);
          context2.beginPath();
          context2.moveTo(x1, y1);
 
          x2 = (width/width) * 20;
-         y2 = -2*((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + height ;
+         y2 = 2*((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + height ;
 
          context.lineTo(x2, y2);
          context.stroke();
