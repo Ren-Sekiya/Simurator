@@ -34,7 +34,7 @@ context2.stroke();
 
 document.querySelector("#b01").addEventListener('click', () =>{
     var vg = new vgraph();
-    vg.graph(elem, elem2);
+    vg.graph(document.querySelector("#graph2"), document.querySelector("#graph4"));
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
