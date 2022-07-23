@@ -13,7 +13,7 @@ class vgraph{
         var y1 = height;
         var x2 = 0;
         var y2 = 0;
-       for(var x = -10 ;x < 10; x++){
+       for(var x = 1 ;x < width; x++){
          context.beginPath();
          context.moveTo(x1, y1);
          context2.beginPath();
