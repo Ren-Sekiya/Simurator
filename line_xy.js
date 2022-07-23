@@ -1,10 +1,7 @@
 var element = document.querySelector("#graph1");
 var context = element.getContext('2d');
-var elem = document.querySelector("#graph2");
-
 var element2 = document.querySelector("#graph3");
 var context2 = element2.getContext('2d');
-var elem2 = document.querySelector("#graph4");
 
 
 var x1 = element.width;
