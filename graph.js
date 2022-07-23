@@ -1,6 +1,6 @@
 class vgraph{
     constructor(elem, elem2){
-    this.canvas = elem;
+    this.element = elem;
     this.context = elem.getContext('2d');
 
     this.element2 = elem2;
