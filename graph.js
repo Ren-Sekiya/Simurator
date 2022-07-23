@@ -7,10 +7,12 @@ class vgraph{
     context2 = element2.getContext('2d');
 
     graph() {
-        width = element.width;
-        height = element.height;
-        x1 = x + width/2;
-        y1 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + width/2;
+        var width = element.width;
+        var height = element.height;
+        var x1 = x + width/2;
+        var y1 = -((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -3) + width/2;
+        var x2 = 0;
+        var y2 = 0;
        for(var x = 1 ;x < width/2; x++){
          context.beginPath();
          context.moveTo(x1, y1);
