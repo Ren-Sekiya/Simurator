@@ -11,6 +11,7 @@ class vgraph{
         var width = this.element.width;
         var height = this.element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
+        this.context2.clearRect(0, 0, this.element2.width, this.element2.height);
         var x1 = 0;
         var y1 = height;
         var x2 = 0;
@@ -36,6 +37,8 @@ class vgraph{
     graph2() {
         var width = element.width;
         var height = element.height;
+        this.context.clearRect(0, 0, this.element.width, this.element.height);
+        this.context2.clearRect(0, 0, this.element2.width, this.element2.height);
         var x1 = 0;
         var y1 = height;
         var x2 = 0;
