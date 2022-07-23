@@ -21,11 +21,11 @@ context.lineTo(x1, y1/2);
 context.stroke();
 
 context2.beginPath();
-context2.moveTo(200, 0);
-context2.lineTo(200, 400);
+context2.moveTo(x1/2, 0);
+context2.lineTo(x1/2, y1);
 context2.stroke();
 
 context2.beginPath();
-context2.moveTo(0, 200);
-context2.lineTo(400, 200);
+context2.moveTo(0, y1/2);
+context2.lineTo(x1, y1/2);
 context2.stroke();
