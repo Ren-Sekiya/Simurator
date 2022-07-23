@@ -9,14 +9,15 @@ var x1 = element.width;
 var x2 = element2.width;
 var y1 = element.height;
 var y2 = element2.height;
+
 context.beginPath();
-context.moveTo(200, 0);
-context.lineTo(200, 400);
+context.moveTo(x1/2, 0);
+context.lineTo(x1/2, y1);
 context.stroke();
 
 context.beginPath();
-context.moveTo(0, 200);
-context.lineTo(400, 200);
+context.moveTo(0, y1/2);
+context.lineTo(x1, y1/2);
 context.stroke();
 
 context2.beginPath();
