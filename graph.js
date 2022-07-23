@@ -62,6 +62,7 @@ class vgraph{
         this.context.beginPath();
         this.context.clearRect(0, 0, this.element.width, this.element.height);
         this.context2.clearRect(0, 0, this.element2.width, this.element2.height);
+        this.context.fill();
     }
 }
 
