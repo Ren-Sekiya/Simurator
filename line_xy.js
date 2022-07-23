@@ -29,12 +29,13 @@ context2.beginPath();
 context2.moveTo(0, y1/2);
 context2.lineTo(x1, y1/2);
 context2.stroke();
-var vg = new vgraph();
 
 document.querySelector("#b01").addEventListener('click', () =>{
+    var vg = new vgraph();
     vg.graph();
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
+    var vg = new vgraph();
     vg.graph2();
 });

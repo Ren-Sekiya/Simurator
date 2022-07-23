@@ -9,8 +9,8 @@ class vgraph{
     graph() {
         var width = element.width;
         var height = element.height;
-        this.context.fillRect(0, 0, width, height);
-        this.context2.fillRect(0, 0, width, height);
+        this.context.clearRect(0, 0, width, height);
+        this.context2.clearRect(0, 0, width, height);
         var x1 = 0;
         var y1 = height;
         var x2 = 0;
