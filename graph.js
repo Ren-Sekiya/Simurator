@@ -4,7 +4,7 @@ class vgraph{
     this.context = elem.getContext('2d');
 
     this.element2 = elem2;
-    this.context2 = elem2.getContent('2d');
+    this.context2 = elem2.getContext('2d');
     };
 
     graph() {
