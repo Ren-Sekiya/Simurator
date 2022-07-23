@@ -57,8 +57,8 @@ class vgraph{
     }
 
     clear(){
-        this.context.fillRect(0, 0, element.width, element.height);
-        this.context2.fillRect(0, 0, element2.width, element2.height);
+        this.context.drawRect(0, 0, element.width, element.height);
+        this.context2.drawRect(0, 0, element2.width, element2.height);
     }
 }
 
