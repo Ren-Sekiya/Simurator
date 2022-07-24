@@ -17,7 +17,6 @@ class calnibun{
         if(this.graph == 1){
             this.elem5.innerHTML = "理論値：" + this.answer;
             do{
-                console.log("やばい");
                 var c = (this.a + this.b) / 2.0;
                 this.elem6.innerHTML = "計算値：" + this.func(c);
                 if(this.func(c)*this.func(this.a) < 0) this.b = c;
