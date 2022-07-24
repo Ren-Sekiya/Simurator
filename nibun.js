@@ -36,10 +36,10 @@ class calnibun{
     }
 
     func(tmp){
-        return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*tmp -3;
+        return (Math.pow(tmp, 3.0)/3.0) - 3.0*(Math.pow(tmp, 2.0)) + 8.0*tmp -3.0;
     }
 
     func2(tmp){
-        return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*tmp -10;
+        return (Math.pow(tmp, 3.0)/3.0) - 3.0*(Math.pow(tmp, 2.0)) + 8.0*tmp -10.0;
     }
 }
