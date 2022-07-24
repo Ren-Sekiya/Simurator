@@ -2,7 +2,7 @@ var element = document.querySelector("#graph1");
 var context = element.getContext('2d');
 var element2 = document.querySelector("#graph3");
 var context2 = element2.getContext('2d');
-var graph = document.querySelector("#b01");;
+var graph = document.querySelector("#b01");
 
 
 var x1 = element.width;
@@ -71,7 +71,6 @@ document.querySelector("#inputControlBar2").addEventListener('input', () =>{
 
 document.querySelector("#start").addEventListener('click', () =>{
     var x = new calnibun(
-        document.querySelector("#b01"),
         document.querySelector("#graph2"),
         document.querySelector("#inputControlBar1"),
         document.querySelector("#inputControlBar2"),
@@ -80,4 +79,14 @@ document.querySelector("#start").addEventListener('click', () =>{
         graph
     );
     x.calcurator();
+
+    var x = new calnyuton(
+        document.querySelector("#b02"),
+        document.querySelector("#graph2"),
+        document.querySelector("#inputControlBar1"),
+        document.querySelector("#inputControlBar2"),
+        document.querySelector("#theory"),
+        document.querySelector("#nibun"),
+        graph
+    ); 
 })
