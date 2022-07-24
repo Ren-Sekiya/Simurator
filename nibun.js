@@ -24,18 +24,18 @@ class calnibun{
         else{
             do{
                 var c = (this.a + this.b) / 2.0;
+                this.elem6.innerHTML = "計算値" + func(c);
                 if(this.func2(c)*this.func2(a) < 0) b = c;
                 else this.a = c;
             }while(this.a - this.b > eps);
         }
-        this.elem6.innerHTML = "計算値" + func(c);
     }
 
     func(tmp){
-        return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*x -3;
+        return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*tmp -3;
     }
 
     func2(tmp){
-        return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*x -10;
+        return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*tmp -10;
     }
 }
