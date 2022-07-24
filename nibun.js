@@ -20,7 +20,7 @@ class calnibun{
                 console.log(this.a);
                 console.log(this.b);
                 var c = (this.a + this.b) / 2.0;
-                this.elem6.innerHTML = "計算値：" + c;
+                this.elem6.innerHTML = "二分法の計算値：" + c;
                 if(this.func(c)*this.func(this.a) < 0) this.b = c;
                 else this.a = c;
             }while(Math.abs(this.a-this.b) > this.eps);
@@ -29,7 +29,7 @@ class calnibun{
             this.elem5.innerHTML = "理論値：" + this.answer2;
             do{
                 var c = (this.a + this.b) / 2.0;
-                this.elem6.innerHTML = "計算値：" + c;
+                this.elem6.innerHTML = "二分法の計算値：" + c;
                 if(this.func2(c)*this.func2(this.a) < 0) this.b = c;
                 else this.a = c;
             }while(Math.abs(this.a-this.b) > this.eps);
