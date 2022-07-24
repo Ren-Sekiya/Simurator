@@ -6,7 +6,7 @@ class calnibun{
         this.b = parseFloat(elem4.value) //初期値b
         this.elem5 = elem5; //理論値
         this.elem6 = elem6; //計算値
-        this.graph = elem7.number;
+        this.graph = elem7.value;
         this.answer = 0.44585
         this.answer2 = 5.7218;
         this.eps = 1;
