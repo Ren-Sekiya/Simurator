@@ -43,3 +43,8 @@ document.querySelector("#clear").addEventListener('click', () =>{
     var vg = new vgraph(document.querySelector("#graph2"), document.querySelector("#graph4"));
     vg.clear();
 })
+
+document.querySelector("#inputControlBar1").addEventListener('input', () =>{
+    var  value = document.querySelector("#inputControlBar1").value;
+    document.querySelector("viewbar1").innerText = value;
+})
