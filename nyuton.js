@@ -17,6 +17,7 @@ class calnyuton{
             this.elem3.innerHTML = "理論値：" + this.answer;
             while(1){
                 this.a = this.b - this.func(this.b) / this.func2(this.b);
+                console.log(this.a);
                 context.beginPath();
                 context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4, 0, Math.PI*2, true);
                 context.fillstyle = "red";
