@@ -55,7 +55,7 @@ document.querySelector("#inputControlBar2").addEventListener('input', () =>{
 })
 
 document.querySelector("#start").addEventListener('click', () =>{
-    var x = new nibun(
+    var x = new calnibun(
         document.querySelector("#b01"),
         document.querySelector("#graph2"),
         document.querySelector("#inputControlBar1"),

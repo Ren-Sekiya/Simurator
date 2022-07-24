@@ -1,4 +1,4 @@
-class nibun{
+class calnibun{
     constructor(elem1, elem2, elem3, elem4, elem5, elem6){
         this.elem1 = elem1; //1つ目のグラフ
         this.elem2 = elem2; //二枚目のキャンバス
@@ -13,6 +13,6 @@ class nibun{
 
     calcurator(){
         this.elem5.innerHTML = "理論値：" + 0.44585;
-        
+
     }
 }
