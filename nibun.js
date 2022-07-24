@@ -9,7 +9,7 @@ class calnibun{
         this.graph = elem7.value;
         this.answer = 0.44585
         this.answer2 = 5.7218;
-        this.eps = 1;
+        this.eps = 0.0001;
         this.roop = 20;
     };
 
