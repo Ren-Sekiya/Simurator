@@ -16,6 +16,7 @@ class calnyuton{
         if(this.graph == 1){
             this.elem3.innerHTML = "理論値：" + this.answer;
             while(1){
+                var timer = 0;
                 this.a = this.b - this.func(this.b) / this.func2(this.b);
                 console.log(this.a);
                 context.beginPath();
@@ -23,8 +24,11 @@ class calnyuton{
                 context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
-                if(Math.abs(this.a - this.b) < this.eps) break;
-                else this.b = this.a;
+                if(Math.abs(this.a - this.b) < this.eps || timer > 1000) break;
+                else{
+                    this.b = this.a;
+                    timer++;
+                }
             }
         }
         else{
@@ -36,8 +40,11 @@ class calnyuton{
                 context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
-                if(Math.abs(this.a - this.b) < this.eps) break;
-                else this.b = this.a;
+                if(Math.abs(this.a - this.b) < this.eps || timer > 1000) break;
+                else{
+                    this.b = this.a;
+                    timer++;
+                }
             }
         }
     }
