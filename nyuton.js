@@ -18,7 +18,7 @@ class calnyuton{
             this.elem3.innerHTML = "理論値：" + this.answer;
             while(1){
                 this.a = this.b - this.func(this.b) / this.func2(this.b);
-                if(this.a.isNaN()){
+                if(isNaN(this.a)){
                     this.elem4.innerHTML = "ニュートン法の計算値：オーバーフローしました"
                     break;
                 }
