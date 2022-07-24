@@ -7,12 +7,12 @@ class vgraph{
     this.context2 = elem2.getContext('2d');
 
     this.element3 = elem3;
-    this.answer = 0.4485;
+    this.answer = 0.44585;
     this.answer2 = 5.7218;
     };
 
     graph() {
-        this.element3.innerText = this.answer;
+        this.element3.innerText = "理論値" + this.answer;
         var width = this.element.width;
         var height = this.element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
@@ -40,7 +40,7 @@ class vgraph{
     }
 
     graph2() {
-        this.element3.innerText = this.answer2;
+        this.element3.innerText = "理論値" + this.answer2;
         var width = element.width;
         var height = element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
