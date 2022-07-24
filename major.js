@@ -30,19 +30,28 @@ context2.lineTo(x1, y1/2);
 context2.stroke();
 
 document.querySelector("#b01").addEventListener('click', () =>{
-    var vg = new vgraph(document.querySelector("#graph2"), document.querySelector("#graph4"));
+    var vg = new vgraph(
+        document.querySelector("#graph2"), 
+        document.querySelector("#graph4"),
+        document.querySelector("#theory")
+    );
     vg.graph();
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
-    var vg = new vgraph(document.querySelector("#graph2"), document.querySelector("#graph4"));
+    var vg = new vgraph(
+        document.querySelector("#graph2"), 
+        document.querySelector("#graph4"),
+        document.querySelector("#theory"),
+    );
     vg.graph2();
 });
 
 document.querySelector("#clear").addEventListener('click', () =>{
     var vg = new vgraph(
         document.querySelector("#graph2"),
-        document.querySelector("#graph4")
+        document.querySelector("#graph4"),
+        document.querySelector("#theory"),
     );
     vg.clear();
 })
