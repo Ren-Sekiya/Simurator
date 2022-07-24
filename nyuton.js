@@ -26,13 +26,14 @@ class calnyuton{
                 context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4, 0, Math.PI*2, true);
                 context.fillstyle = "red";
                 context.fill();
-                this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
+                //this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
                 if(Math.abs(this.a - this.b) < this.eps || this.timer > 50) break;
                 else{
                     this.b = this.a;
                     this.timer++;
                 }
             }
+            this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
         }
         else{
             this.elem3.innerHTML = "理論値：" + this.answer2;
