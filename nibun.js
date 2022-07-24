@@ -24,7 +24,7 @@ class calnibun{
         else{
             do{
                 var c = (this.a + this.b) / 2.0;
-                if(this.func2(c)*this.funk2(a) < 0) b = c;
+                if(this.func2(c)*this.func2(a) < 0) b = c;
                 else this.a = c;
             }while(this.a - this.b > eps);
         }
@@ -35,7 +35,7 @@ class calnibun{
         return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*x -3;
     }
 
-    funk2(tmp){
+    func2(tmp){
         return (Math.pow(tmp, 3)/3) - 3*(Math.pow(tmp, 2)) + 8*x -10;
     }
 }
