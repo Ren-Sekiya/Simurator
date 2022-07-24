@@ -18,7 +18,7 @@ class calnyuton{
             while(1){
                 this.a = this.b - this.func(this.b) / this.func2(this.b);
                 context.beginPath();
-                context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4 ,0, Math.PI*2, true);
+                context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4, 0, Math.PI*2, true);
                 context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
@@ -31,7 +31,7 @@ class calnyuton{
             while(1){
                 this.a = this.b - this.func3(this.b) / this.func4(this.b);
                 context.beginPath();
-                context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4 ,0, Math.PI*2, true);
+                context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4, 0, Math.PI*2, true);
                 context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
@@ -46,7 +46,7 @@ class calnyuton{
     }
 
     func2(tmp){
-        return (Math.pow(tmp, 2.0) - 6 * tmp - 8);
+        return (Math.pow(tmp, 2.0) - 6.0 * tmp - 8.0);
     }
 
     func3(tmp){
@@ -54,6 +54,6 @@ class calnyuton{
     }
 
     func4(tmp){
-        return (Math.pow(tmp, 2.0) - 6 * tmp - 10);
+        return (Math.pow(tmp, 2.0) - 6.0 * tmp - 8.0);
     }
 }
