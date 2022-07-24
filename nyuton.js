@@ -19,7 +19,7 @@ class calnyuton{
             while(1){
                 this.a = this.b - this.func(this.b) / this.func2(this.b);
                 if(isNaN(this.a)){
-                    this.elem4.innerHTML = "ニュートン法の計算値：オーバーフローしました"
+                    this.elem4.innerHTML = "変曲点のため計算できません";
                     break;
                 }
                 context.beginPath();
