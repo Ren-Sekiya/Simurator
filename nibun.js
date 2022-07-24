@@ -16,7 +16,7 @@ class calnibun{
     calcurator(){
         console.log((this.a + this.b)/2.0);
         console.log(this.graph);
-        console.log(this.func(this.a)*this.func(this.b));
+        console.log(Math.abs(this.a-this.b));
         /*if(this.graph == 1){
             this.elem5.innerHTML = "理論値：" + this.answer;
             do{
