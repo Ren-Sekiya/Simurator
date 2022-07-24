@@ -17,6 +17,7 @@ class calnibun{
         if(this.graph == 1){
             do{
                 var c = (this.a + this.b) / 2.0;
+                this.elem6.innerHTML = "計算値" + this.func(c);
                 if(this.func(c)*this.func(a) < 0) b = c;
                 else this.a = c;
             }while(this.a - this.b > eps);
@@ -24,7 +25,7 @@ class calnibun{
         else{
             do{
                 var c = (this.a + this.b) / 2.0;
-                this.elem6.innerHTML = "計算値" + func(c);
+                this.elem6.innerHTML = "計算値" + this.func2(c);
                 if(this.func2(c)*this.func2(a) < 0) b = c;
                 else this.a = c;
             }while(this.a - this.b > eps);
