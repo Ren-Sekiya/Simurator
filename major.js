@@ -80,11 +80,13 @@ document.querySelector("#start").addEventListener('click', () =>{
     );
     x.calcurator();
 
-    var x = new calnyuton(
+    var y = new calnyuton(
         document.querySelector("#graph4"),
         document.querySelector("#inputControlBar2"),
         document.querySelector("#theory"),
         document.querySelector("#nyuton"),
         graph
-    ); 
+    );
+    y.calcurate();
+
 })
