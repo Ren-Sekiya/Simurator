@@ -14,7 +14,7 @@ class calnyuton{
 
     calcurate(){
         var context =this.elem1.getContext('2d');
-        context.fillstyle = "red";
+        context.fillStyle = "red";
         if(this.graph == 1){
             this.elem3.innerHTML = "理論値：" + this.answer;
             while(1){
