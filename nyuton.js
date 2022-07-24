@@ -23,7 +23,7 @@ class calnyuton{
                 context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
-                if(Math.abs(this.a - this.b) < this.eps || this.timer > 100) break;
+                if(Math.abs(this.a - this.b) < this.eps || this.timer > 50) break;
                 else{
                     this.b = this.a;
                     this.timer++;
