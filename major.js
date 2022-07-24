@@ -63,4 +63,5 @@ document.querySelector("#start").addEventListener('click', () =>{
         document.querySelector("#theory"),
         document.querySelector("#nibun")
     );
+    x.calcurator();
 })
