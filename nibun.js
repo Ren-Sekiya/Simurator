@@ -8,7 +8,7 @@ class calnibun{
         this.elem6 = elem6; //計算値
         this.graph = elem7.value;
         this.answer = 0.44585
-        this.answer2 = 5.7218;
+        this.answer2 = 5.72189;
         this.eps = 0.0001;
         this.roop = 20;
     };
