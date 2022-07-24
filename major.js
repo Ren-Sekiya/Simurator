@@ -54,8 +54,8 @@ document.querySelector("#inputControlBar2").addEventListener('input', () =>{
     document.querySelector("#viewbar2").innerText = val.value;
 })
 
-document.querySelector("#start").addEventListener('click', () =>{
+/*document.querySelector("#start").addEventListener('click', () =>{
     var x = new nibun(
-        document.querySelector();
-    )
-})
+        document.querySelector("#b01");
+    );
+})*/
