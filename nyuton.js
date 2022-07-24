@@ -1,7 +1,6 @@
 class calnyuton{
     constructor(elem1, elem2, elem3, elem4, elem5){
         this.elem1 = elem1; //2枚目のキャンバス
-        this.context = this.elem1.getContext('2d');
         this.a = 0.0;
         this.b = parseFloat(elem2.value); //初期値b
         this.elem3 = elem3; //理論値
@@ -14,7 +13,7 @@ class calnyuton{
     };
 
     calcurate(){
-        this.context.fillstyle = "red";
+        var context =this.elem1.getContext('2d');
         if(this.graph == 1){
             this.elem3.innerHTML = "理論値：" + this.answer;
             while(1){
@@ -25,6 +24,7 @@ class calnyuton{
                 }
                 context.beginPath();
                 context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4, 0, Math.PI*2, true);
+                context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
                 if(Math.abs(this.a - this.b) < this.eps || this.timer > 50) break;
@@ -40,6 +40,7 @@ class calnyuton{
                 this.a = this.b - this.func3(this.b) / this.func4(this.b);
                 context.beginPath();
                 context.arc(this.elem1.width / 2 + 20 * this.a, this.elem1.height / 2, 4, 0, Math.PI*2, true);
+                context.fillstyle = "red";
                 context.fill();
                 this.elem4.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
                 if(Math.abs(this.a - this.b) < this.eps || this.timer > 50) break;
