@@ -28,7 +28,7 @@ class calnibun{
                 else this.a = c;
             }while(this.a - this.b > eps);
         }
-        this.elem6.innerHTML = func(c);
+        this.elem6.innerHTML = "計算値" + func(c);
     }
 
     func(tmp){
