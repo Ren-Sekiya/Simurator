@@ -16,17 +16,17 @@ class calnibun{
         this.elem5.innerHTML = "理論値：" + 0.44585;
         if(this.graph == 1){
             do{
-                var c = (a + b) / 2.0;
+                var c = (this.a + this.b) / 2.0;
                 if(this.func(c)*this.funk(a) < 0) b = c;
-                else a = c;
-            }while(a - b > eps);
+                else this.a = c;
+            }while(this.a - this.b > eps);
         }
         else{
             do{
-                var c = (a + b) / 2.0;
+                var c = (this.a + this.b) / 2.0;
                 if(this.func2(c)*this.funk2(a) < 0) b = c;
-                else a = c;
-            }while(a - b > eps);
+                else this.a = c;
+            }while(this.a - this.b > eps);
         }
         this.elem6.innerHTML = func(c);
     }
