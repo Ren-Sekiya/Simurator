@@ -20,7 +20,7 @@ class calnibun{
                 this.elem6.innerHTML = "計算値" + this.func(c);
                 if(this.func(c)*this.func(this.a) < 0) this.b = c;
                 else this.a = c;
-            }while(this.a - this.b > eps);
+            }while(this.a - this.b > this.eps);
         }
         else{
             do{
@@ -28,7 +28,7 @@ class calnibun{
                 this.elem6.innerHTML = "計算値" + this.func2(c);
                 if(this.func2(c)*this.func2(this.a) < 0) this.b = c;
                 else this.a = c;
-            }while(this.a - this.b > eps);
+            }while(this.a - this.b > this.eps);
         }
     }
 
