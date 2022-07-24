@@ -19,7 +19,6 @@ class calnibun{
             this.elem5.innerHTML = "理論値：" + this.answer;
             do{
                 var c = (this.a + this.b) / 2.0;
-                console.log(c);
                 context.beginPath();
                 context.arc(this.elem2.width / 2 + 20 * c,this.elem2.height/2 - 2 * this.func(c), 4 ,0, Math.PI*2, true);
                 context.fillstyle = "red";
@@ -33,6 +32,7 @@ class calnibun{
             this.elem5.innerHTML = "理論値：" + this.answer2;
             do{
                 var c = (this.a + this.b) / 2.0;
+                console.log(c);
                 context.beginPath();
                 context.arc(this.elem2.width / 2 + 20 * (this.a + this.b) / 2.0,
                  this.elem2.height/2 - 2*Math.abs(this.func(c)), 4 , 0, Math.PI*2, true);
