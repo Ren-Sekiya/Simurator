@@ -16,7 +16,7 @@ class calnyuton{
         if(this.graph == 1){
             this.elem3.innerHTML = "理論値：" + this.answer;
             while(1){
-                this.a = this.b - func(this.b) / this.func2(this.b);
+                this.a = this.b - this.func(this.b) / this.func2(this.b);
                 context.beginPath();
                 context.arc(this.elem1.width / 2 + 20 * this.a, elem1.height / 2, 4 ,0, Math.PI*2, true);
                 context.fillstyle = "red";
@@ -29,7 +29,7 @@ class calnyuton{
         else{
             this.elem3.innerHTML = "理論値：" + this.answer2;
             while(1){
-                this.a = this.b - func3(this.b) / this.func4(this.b);
+                this.a = this.b - this.func3(this.b) / this.func4(this.b);
                 context.beginPath();
                 context.arc(this.elem1.width / 2 + 20 * this.a, elem1.height / 2, 4 ,0, Math.PI*2, true);
                 context.fillstyle = "red";
