@@ -42,7 +42,8 @@ document.querySelector("#b02").addEventListener('click', () => {
 document.querySelector("#clear").addEventListener('click', () =>{
     var vg = new vgraph(
         document.querySelector("#graph2"),
-        document.querySelector("#graph4"));
+        document.querySelector("#graph4")
+    );
     vg.clear();
 })
 

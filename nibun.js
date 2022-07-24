@@ -9,7 +9,7 @@ class calnibun{
         this.answer = 0.44585
         this.eps = 0.001;
         this.roop = 20;
-    }
+    };
 
     calcurator(){
         this.elem5.innerHTML = "理論値：" + 0.44585;
