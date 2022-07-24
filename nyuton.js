@@ -1,7 +1,7 @@
 class calnyuton{
     constructor(elem1, elem2, elem3, elem4, elem5){
         this.elem1 = elem1; //2枚目のキャンバス
-        this.context = elem1.getContext('2d');
+        this.context = this.elem1.getContext('2d');
         this.a = 0.0;
         this.b = parseFloat(elem2.value); //初期値b
         this.elem3 = elem3; //理論値
