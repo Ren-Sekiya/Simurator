@@ -14,7 +14,7 @@ class calnibun{
     };
 
     calcurator(){
-        console.log((this.a + this.a)/2.0);
+        console.log((this.a + this.b)/2.0);
         console.log(this.graph);
         console.log(this.func(this.a)*this.func(this.b));
         /*if(this.graph == 1){
