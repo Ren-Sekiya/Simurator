@@ -21,7 +21,7 @@ class vgraph{
         var y1 = height;
         var x2 = 0.0;
         var y2 = 0.0;
-       for(var x = -10 ;x <= 10; x++){
+       for(var x = -9 ;x <= 10; x++){
          this.context.beginPath();
          this.context.moveTo(x1, y1);
          this.context2.beginPath();
