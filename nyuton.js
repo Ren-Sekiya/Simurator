@@ -47,7 +47,7 @@ class calnyuton{
     }
 
     func2(tmp){
-        return (Math.pow(tmp, 2.0) - 6.0 * tmp - 8.0);
+        return (Math.pow(tmp, 2.0) - 6.0 * tmp + 8.0);
     }
 
     func3(tmp){
