@@ -9,7 +9,6 @@ class calnibun{
         this.answer = 0.44585;
         this.answer2 = 5.72189;
         this.eps = 0.0001;
-        this.roop = 20;
     };
 
     calcurator(){
