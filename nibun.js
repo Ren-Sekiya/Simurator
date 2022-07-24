@@ -18,13 +18,11 @@ class calnibun{
         if(this.graph == 1){
             this.elem5.innerHTML = "理論値：" + this.answer;
             do{
-                console.log(this.a);
-                console.log(this.b);
                 var c = (this.a + this.b) / 2.0;
                 context.beginPath();
                 context.arc(this.elem2.width / 2 + 20 * (this.a + this.b) / 2.0,
-                 this.elem2.height/2 - Math.abs(this.func(c)),5 , 0, Math.PI*2, true);
-                context.fillstyle = "black";
+                 this.elem2.height/2 - Math.abs(this.func(c)), 4 ,0, Math.PI*2, true);
+                context.fillstyle = "red";
                 context.fill();
                 this.elem6.innerHTML = "二分法の計算値：" + Math.round(c*100000)/100000;
                 if(this.func(c)*this.func(this.a) < 0) this.b = c;
@@ -35,6 +33,11 @@ class calnibun{
             this.elem5.innerHTML = "理論値：" + this.answer2;
             do{
                 var c = (this.a + this.b) / 2.0;
+                context.beginPath();
+                context.arc(this.elem2.width / 2 + 20 * (this.a + this.b) / 2.0,
+                 this.elem2.height/2 - Math.abs(this.func(c)), 4 , 0, Math.PI*2, true);
+                context.fillstyle = "red";
+                context.fill();
                 this.elem6.innerHTML = "二分法の計算値：" + Math.round(c*100000)/100000;
                 if(this.func2(c)*this.func2(this.a) < 0) this.b = c;
                 else this.a = c;
