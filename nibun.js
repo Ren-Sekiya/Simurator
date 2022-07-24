@@ -6,7 +6,7 @@ class calnibun{
         this.elem4 = elem4; //理論値
         this.elem5 = elem5; //計算値
         this.graph = elem6.value;
-        this.answer = 0.44585
+        this.answer = 0.44585;
         this.answer2 = 5.72189;
         this.eps = 0.0001;
         this.roop = 20;
