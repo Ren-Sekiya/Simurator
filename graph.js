@@ -12,7 +12,7 @@ class vgraph{
     };
 
     graph() {
-        this.element3.innerText = "理論値" + this.answer;
+        this.element3.innerText = "理論値：" + this.answer;
         var width = this.element.width;
         var height = this.element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
@@ -40,7 +40,7 @@ class vgraph{
     }
 
     graph2() {
-        this.element3.innerText = "理論値" + this.answer2;
+        this.element3.innerText = "理論値：" + this.answer2;
         var width = element.width;
         var height = element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
