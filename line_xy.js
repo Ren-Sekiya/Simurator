@@ -48,3 +48,8 @@ document.querySelector("#inputControlBar1").addEventListener('input', () =>{
     var val = document.querySelector("#inputControlBar1");
     document.querySelector("#viewbar1").innerText = val.value;
 })
+
+document.querySelector("#inputControlBar2").addEventListener('input', () =>{
+    var val = document.querySelector("#inputControlBar2");
+    document.querySelector("#viewbar2").innerText = val.value;
+})
