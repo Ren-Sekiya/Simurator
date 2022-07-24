@@ -2,6 +2,7 @@ var element = document.querySelector("#graph1");
 var context = element.getContext('2d');
 var element2 = document.querySelector("#graph3");
 var context2 = element2.getContext('2d');
+var graph = document.querySelector("#b01");;
 
 
 var x1 = element.width;
@@ -30,6 +31,7 @@ context2.lineTo(x1, y1/2);
 context2.stroke();
 
 document.querySelector("#b01").addEventListener('click', () =>{
+    graph = document.querySelector("#b01");
     var vg = new vgraph(
         document.querySelector("#graph2"), 
         document.querySelector("#graph4"),
@@ -39,6 +41,7 @@ document.querySelector("#b01").addEventListener('click', () =>{
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
+    graph = document.querySelector("#b02");
     var vg = new vgraph(
         document.querySelector("#graph2"), 
         document.querySelector("#graph4"),
@@ -73,7 +76,8 @@ document.querySelector("#start").addEventListener('click', () =>{
         document.querySelector("#inputControlBar1"),
         document.querySelector("#inputControlBar2"),
         document.querySelector("#theory"),
-        document.querySelector("#nibun")
+        document.querySelector("#nibun"),
+        graph
     );
     x.calcurator();
 })

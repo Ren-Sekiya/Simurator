@@ -17,10 +17,10 @@ class vgraph{
         var height = this.element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
         this.context2.clearRect(0, 0, this.element2.width, this.element2.height);
-        var x1 = 0;
+        var x1 = 0.0;
         var y1 = height;
-        var x2 = 0;
-        var y2 = 0;
+        var x2 = 0.0;
+        var y2 = 0.0;
        for(var x = -10 ;x < 10; x++){
          this.context.beginPath();
          this.context.moveTo(x1, y1);
@@ -45,10 +45,10 @@ class vgraph{
         var height = element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
         this.context2.clearRect(0, 0, this.element2.width, this.element2.height);
-        var x1 = 0;
+        var x1 = 0.0;
         var y1 = height;
-        var x2 = 0;
-        var y2 = 0;
+        var x2 = 0.0;
+        var y2 = 0.0;
        for(var x = -10 ;x < 10; x++){
         this.context.beginPath();
         this.context.moveTo(x1, y1);
