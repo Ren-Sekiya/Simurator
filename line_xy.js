@@ -46,5 +46,5 @@ document.querySelector("#clear").addEventListener('click', () =>{
 
 document.querySelector("#inputControlBar1").addEventListener('input', () =>{
     var val = document.querySelector("#inputControlBar1");
-    document.querySelector("viewbar1").innerText = val.value;
+    document.querySelector("viewbar1").innerText = 1;
 })
