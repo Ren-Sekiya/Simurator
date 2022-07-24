@@ -14,6 +14,9 @@ class calnibun{
     };
 
     calcurator(){
+        console.log(this.a);
+        console.log(this.b);
+        console.log(func(a));
         /*if(this.graph == 1){
             this.elem5.innerHTML = "理論値：" + this.answer;
             do{
