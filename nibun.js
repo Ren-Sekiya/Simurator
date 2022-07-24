@@ -19,7 +19,7 @@ class calnibun{
                 var c = (this.a + this.b) / 2.0;
                 context.beginPath();
                 context.arc(this.elem1.width / 2 + 20 * c,this.elem1.height/2 - 2 * this.func(c), 4 ,0, Math.PI*2, true);
-                context.fillstyle = "red";
+                context.fillstyle = '#ff0000';
                 context.fill();
                 this.elem5.innerHTML = "二分法の計算値：" + Math.round(c*100000)/100000;
                 if(this.func(c)*this.func(this.a) < 0) this.b = c;
