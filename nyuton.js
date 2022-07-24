@@ -1,0 +1,59 @@
+class calnyuton{
+    constructor(elem1, elem2, elem3, elem4, elem5){
+        this.elem1 = elem1; //2枚目のキャンバス
+        this.a = 0.0;
+        this.b = parseFloat(elem2.value); //初期値b
+        this.elem3 = elem3; //理論値
+        this.elem4 = elem4; //計算値
+        this.graph = elem5.value;
+        this.answer = 0.44585;
+        this.answer2 = 5.72189;
+        this.eps = 0.0001;
+    };
+
+    calcurate(){
+        var context =this.elem1.getContext('2d');
+        if(this.graph == 1){
+            this.elem4.innerHTML = "理論値：" + this.answer;
+            while(1){
+                this.a = this.b - func(this.b) / this.func2(this.b);
+                context.beginPath();
+                context.arc(this.elem1.width / 2 + 20 * this.a, elem1.height / 2, 4 ,0, Math.PI*2, true);
+                context.fillstyle = "red";
+                context.fill();
+                this.elem5.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
+                if(Math.abs(this.a - this.b) < this.eps) break;
+                else b = a;
+            }
+        }
+        else{
+            this.elem4.innerHTML = "理論値：" + this.answer2;
+            while(1){
+                this.a = this.b - func3(this.b) / this.func4(this.b);
+                context.beginPath();
+                context.arc(this.elem1.width / 2 + 20 * this.a, elem1.height / 2, 4 ,0, Math.PI*2, true);
+                context.fillstyle = "red";
+                context.fill();
+                this.elem5.innerHTML = "ニュートン法の計算値：" + Math.round(this.a*100000)/100000;
+                if(Math.abs(this.a - this.b) < this.eps) break;
+                else b = a;
+            }
+        }
+    }
+
+    func(tmp){
+        return (Math.pow(tmp, 3.0)/3.0) - 3.0*(Math.pow(tmp, 2.0)) + 8.0*tmp -3.0;
+    }
+
+    func2(tmp){
+        return (Math.pow(tmp, 2.0) - 6 * tmp - 8);
+    }
+
+    func3(tmp){
+        return (Math.pow(tmp, 3.0)/3.0) - 3.0*(Math.pow(tmp, 2.0)) + 8.0*tmp -10.0;
+    }
+
+    func4(tmp){
+        return (Math.pow(tmp, 2.0) - 6 * tmp - 10);
+    }
+}
