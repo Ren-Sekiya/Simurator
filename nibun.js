@@ -8,27 +8,29 @@ class calnibun{
         this.elem6 = elem6; //計算値
         this.graph = elem7.number;
         this.answer = 0.44585
+        this.answer2 = 5.7218;
         this.eps = 0.0001;
         this.roop = 20;
     };
 
     calcurator(){
-        this.elem5.innerHTML = "理論値：" + 0.44585;
         if(this.graph == 1){
+            this.elem5.innerHTML = "理論値：" + this.answer;
             do{
                 var c = (this.a + this.b) / 2.0;
-                this.elem6.innerHTML = "計算値" + this.func(c);
+                this.elem6.innerHTML = "計算値：" + this.func(c);
                 if(this.func(c)*this.func(this.a) < 0) this.b = c;
                 else this.a = c;
-            }while(this.a - this.b > this.eps);
+            }while(Math.abs(this.a-this.b) > this.eps);
         }
         else{
+            this.elem5.innerHTML = "理論値：" + this.answer2;
             do{
                 var c = (this.a + this.b) / 2.0;
-                this.elem6.innerHTML = "計算値" + this.func2(c);
+                this.elem6.innerHTML = "計算値：" + this.func2(c);
                 if(this.func2(c)*this.func2(this.a) < 0) this.b = c;
                 else this.a = c;
-            }while(this.a - this.b > this.eps);
+            }while(Math.abs(this.a-this.b) > this.eps);
         }
     }
 
