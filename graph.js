@@ -57,7 +57,6 @@ class vgraph{
 
          x2 = x1 + (width/width) * 20;
          y2 = -2*((Math.pow(x, 3)/3) - 3*(Math.pow(x, 2)) + 8*x -10) + height/2;
-         console.log(y2);
 
          this.context.lineTo(x2, y2);
          this.context.stroke();
