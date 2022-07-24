@@ -2,8 +2,8 @@ class calnibun{
     constructor(elem1, elem2, elem3, elem4, elem5, elem6, elem7){
         this.elem1 = elem1; //1つ目のグラフ
         this.elem2 = elem2; //二枚目のキャンバス
-        this.a = perseFloat(elem3.value); //初期値a
-        this.b = perseFloat(elem4.value) //初期値b
+        this.a = parseFloat(elem3.value); //初期値a
+        this.b = parseFloat(elem4.value) //初期値b
         this.elem5 = elem5; //理論値
         this.elem6 = elem6; //計算値
         this.graph = elem7.number;
