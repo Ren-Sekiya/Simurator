@@ -31,6 +31,7 @@ context2.lineTo(x1, y1/2);
 context2.stroke();
 
 document.querySelector("#b01").addEventListener('click', () =>{
+    graph = document.querySelector("#b01");
     var vg = new vgraph(
         document.querySelector("#graph2"), 
         document.querySelector("#graph4"),
@@ -42,6 +43,7 @@ document.querySelector("#b01").addEventListener('click', () =>{
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
+    graph = document.querySelector("#b02");
     var vg = new vgraph(
         document.querySelector("#graph2"), 
         document.querySelector("#graph4"),
