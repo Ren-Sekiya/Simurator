@@ -1,5 +1,5 @@
 class vgraph{
-    constructor(elem, elem2, elem3){
+    constructor(elem, elem2, elem3, elem4, elem5){
     this.element = elem;
     this.context = elem.getContext('2d');
 
@@ -9,10 +9,15 @@ class vgraph{
     this.element3 = elem3;
     this.answer = 0.44585;
     this.answer2 = 5.7218;
+
+    this.element4 = elem4;
+    this.element5 = emem5;
     };
 
     graph() {
         this.element3.innerText = "理論値：" + this.answer;
+        this.element4.innerText = "";
+        this.element5.innerText = "";
         var width = this.element.width;
         var height = this.element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
@@ -41,6 +46,8 @@ class vgraph{
 
     graph2() {
         this.element3.innerText = "理論値：" + this.answer2;
+        this.element4.innerText = "";
+        this.element5.innerText = "";
         var width = element.width;
         var height = element.height;
         this.context.clearRect(0, 0, this.element.width, this.element.height);
@@ -68,6 +75,8 @@ class vgraph{
     }
 
     clear(){
+        this.element4.innerText = "";
+        this.element5.innerText = "";
         //this.context.beginPath();
         this.context.clearRect(0, 0, this.element.width, this.element.height);
         this.context2.clearRect(0, 0, this.element2.width, this.element2.height);

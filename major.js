@@ -31,21 +31,23 @@ context2.lineTo(x1, y1/2);
 context2.stroke();
 
 document.querySelector("#b01").addEventListener('click', () =>{
-    graph = document.querySelector("#b01");
     var vg = new vgraph(
         document.querySelector("#graph2"), 
         document.querySelector("#graph4"),
-        document.querySelector("#theory")
+        document.querySelector("#theory"),
+        document.querySelector("#nibun"),
+        document.querySelector("#nyuton")
     );
     vg.graph();
 });
 
 document.querySelector("#b02").addEventListener('click', () => {
-    graph = document.querySelector("#b02");
     var vg = new vgraph(
         document.querySelector("#graph2"), 
         document.querySelector("#graph4"),
         document.querySelector("#theory"),
+        document.querySelector("#nibun"),
+        document.querySelector("#nyuton")
     );
     vg.graph2();
 });
@@ -55,6 +57,8 @@ document.querySelector("#clear").addEventListener('click', () =>{
         document.querySelector("#graph2"),
         document.querySelector("#graph4"),
         document.querySelector("#theory"),
+        document.querySelector("#nibun"),
+        document.querySelector("#nyuton")
     );
     vg.clear();
 })
