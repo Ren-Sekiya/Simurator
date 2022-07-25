@@ -11,7 +11,7 @@ class vgraph{
     this.answer2 = 5.7218;
 
     this.element4 = elem4;
-    this.element5 = emem5;
+    this.element5 = elem5;
     };
 
     graph() {
