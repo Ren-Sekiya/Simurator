@@ -8,7 +8,7 @@ class vgraph{
 
     this.element3 = elem3;
     this.answer = 0.44585;
-    this.answer2 = 5.7218;
+    this.answer2 = 5.72189;
 
     this.element4 = elem4;
     this.element5 = elem5;
